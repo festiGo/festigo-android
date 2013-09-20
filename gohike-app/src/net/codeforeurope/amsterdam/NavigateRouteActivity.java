@@ -10,6 +10,7 @@ import net.codeforeurope.amsterdam.service.CheckinService;
 import net.codeforeurope.amsterdam.util.ActionConstants;
 import net.codeforeurope.amsterdam.util.ApiConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -42,7 +43,7 @@ public class NavigateRouteActivity extends AbstractGameActivity implements Locat
 
 	private static final int COMPASS_UPDATE_THRESHOLD = 500;
 
-	private static final int CHECKIN_DISTANCE = 15000; // Change to 20 for
+	private static final int CHECKIN_DISTANCE = 50; // Change to 20 for
 
 	private static final int SHOW_LOCATION_DETAIL_REQUEST_CODE = 1234;
 

@@ -2,9 +2,9 @@ package net.codeforeurope.amsterdam.adapter;
 
 import java.util.ArrayList;
 
-import net.codeforeurope.amsterdam.R;
 import net.codeforeurope.amsterdam.model.City;
 import net.codeforeurope.amsterdam.model.LocateData;
+import nl.dezwiger.auiw.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

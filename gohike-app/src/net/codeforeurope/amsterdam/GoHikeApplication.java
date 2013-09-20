@@ -45,7 +45,7 @@ public class GoHikeApplication extends Application {
 	 */
 	public long getSelectedCityId() {
 		SharedPreferences settings = getSharedPreferences(ApiConstants.GOHIKE_SETTINGS, 0);
-		return settings.getLong(ApiConstants.CURRENT_CITY_ID, 0);
+		return settings.getLong(ApiConstants.CURRENT_CITY_ID, 1);
 	}
 
 	/**

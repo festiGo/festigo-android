@@ -8,6 +8,7 @@ import net.codeforeurope.amsterdam.service.ConnectApiService;
 import net.codeforeurope.amsterdam.util.ActionConstants;
 import net.codeforeurope.amsterdam.util.ApiConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;

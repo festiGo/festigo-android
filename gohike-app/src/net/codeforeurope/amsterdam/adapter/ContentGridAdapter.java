@@ -2,10 +2,10 @@ package net.codeforeurope.amsterdam.adapter;
 
 import java.util.ArrayList;
 
-import net.codeforeurope.amsterdam.R;
 import net.codeforeurope.amsterdam.model.Profile;
 import net.codeforeurope.amsterdam.model.Route;
 import net.codeforeurope.amsterdam.util.StreamDrawable;
+import nl.dezwiger.auiw.R;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

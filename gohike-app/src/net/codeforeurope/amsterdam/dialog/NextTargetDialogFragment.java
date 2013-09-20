@@ -1,9 +1,9 @@
 package net.codeforeurope.amsterdam.dialog;
 
 import net.codeforeurope.amsterdam.NavigateRouteActivity;
-import net.codeforeurope.amsterdam.R;
 import net.codeforeurope.amsterdam.model.Waypoint;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;

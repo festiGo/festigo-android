@@ -3,6 +3,7 @@ package net.codeforeurope.amsterdam;
 
 import net.codeforeurope.amsterdam.util.ApiConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;

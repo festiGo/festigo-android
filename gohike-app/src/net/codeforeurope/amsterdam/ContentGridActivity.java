@@ -10,6 +10,7 @@ import net.codeforeurope.amsterdam.service.CatalogApiService;
 import net.codeforeurope.amsterdam.service.ImageDownloadService;
 import net.codeforeurope.amsterdam.util.ActionConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -20,7 +21,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ListView;
 
-public class ContentGridActivity extends AbstractGameActivity implements OnGridItemClickListener {
+public class ContentGridActivity extends AbstractGameActivity implements
+		OnGridItemClickListener {
 
 	ListView gridView;
 	ContentGridAdapter adapter;
@@ -51,6 +53,9 @@ public class ContentGridActivity extends AbstractGameActivity implements OnGridI
 	protected void setupActionBar() {
 		super.setupActionBar();
 		actionBar.setTitle(getCurrentCityName());
+
+		actionBar.setDisplayHomeAsUpEnabled(false);
+
 	}
 
 	@Override
@@ -59,9 +64,11 @@ public class ContentGridActivity extends AbstractGameActivity implements OnGridI
 		registerReceiver(receiver, receiverFilter);
 		if (getApp().shouldRequestCatalog()) {
 
-			progressDialog.setMessage(getString(R.string.content_grid_loading_catalog));
+			progressDialog
+					.setMessage(getString(R.string.content_grid_loading_catalog));
 			progressDialog.show();
-			Intent intent = new Intent(getApplicationContext(), CatalogApiService.class);
+			Intent intent = new Intent(getApplicationContext(),
+					CatalogApiService.class);
 			intent.putExtra(DataConstants.CITY_ID, getApp().getSelectedCityId());
 			startService(intent);
 		} else {
@@ -87,12 +94,14 @@ public class ContentGridActivity extends AbstractGameActivity implements OnGridI
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			gotoCityList(false);
-			overridePendingTransition(R.anim.enter_from_left, R.anim.leave_to_right);
+			overridePendingTransition(R.anim.enter_from_left,
+					R.anim.leave_to_right);
 			return true;
 		case R.id.menu_view_settings:
 			Intent intent = new Intent(getBaseContext(), SettingsActivity.class);
 			startActivity(intent);
-			overridePendingTransition(R.anim.enter_from_right, R.anim.leave_to_left);
+			overridePendingTransition(R.anim.enter_from_right,
+					R.anim.leave_to_left);
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -104,16 +113,21 @@ public class ContentGridActivity extends AbstractGameActivity implements OnGridI
 		public void onReceive(Context context, Intent intent) {
 			String action = intent.getAction();
 			if (ActionConstants.CATALOG_DOWNLOAD_COMPLETE.equals(action)) {
-				Intent downloadIntent = new Intent(getApplicationContext(), ImageDownloadService.class);
-				downloadIntent.setAction(ActionConstants.CATALOG_DOWNLOAD_COMPLETE);
-				downloadIntent.putExtra(DataConstants.CATALOG_PROFILES,
-						intent.getParcelableArrayListExtra(DataConstants.CATALOG_PROFILES));
+				Intent downloadIntent = new Intent(getApplicationContext(),
+						ImageDownloadService.class);
+				downloadIntent
+						.setAction(ActionConstants.CATALOG_DOWNLOAD_COMPLETE);
+				downloadIntent
+						.putExtra(
+								DataConstants.CATALOG_PROFILES,
+								intent.getParcelableArrayListExtra(DataConstants.CATALOG_PROFILES));
 				startService(downloadIntent);
 
 			} else if (ActionConstants.IMAGE_DOWNLOAD_PROGRESS.equals(action)) {
 
 			} else if (ActionConstants.IMAGE_DOWNLOAD_COMPLETE.equals(action)) {
-				ArrayList<Profile> profiles = intent.getParcelableArrayListExtra(DataConstants.CATALOG_PROFILES);
+				ArrayList<Profile> profiles = intent
+						.getParcelableArrayListExtra(DataConstants.CATALOG_PROFILES);
 				getApp().storeCatalog(profiles);
 				adapter.setProfiles(profiles);
 				progressDialog.dismiss();

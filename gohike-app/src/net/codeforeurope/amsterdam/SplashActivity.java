@@ -10,6 +10,7 @@ import net.codeforeurope.amsterdam.service.ImageDownloadService;
 import net.codeforeurope.amsterdam.service.LocalRoutesService;
 import net.codeforeurope.amsterdam.util.ActionConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
+import nl.dezwiger.auiw.R;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
