@@ -1,7 +1,7 @@
 package net.codeforeurope.amsterdam.dialog;
 
 import net.codeforeurope.amsterdam.SplashActivity;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;

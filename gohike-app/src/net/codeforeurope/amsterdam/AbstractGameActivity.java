@@ -5,7 +5,7 @@ import net.codeforeurope.amsterdam.model.City;
 import net.codeforeurope.amsterdam.model.Route;
 import net.codeforeurope.amsterdam.model.Waypoint;
 import net.codeforeurope.amsterdam.util.DataConstants;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.app.ActionBar;
 import android.app.Dialog;
 import android.app.ProgressDialog;

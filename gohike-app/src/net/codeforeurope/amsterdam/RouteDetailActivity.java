@@ -7,7 +7,7 @@ import net.codeforeurope.amsterdam.service.RouteApiService;
 import net.codeforeurope.amsterdam.util.ActionConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
 import net.codeforeurope.amsterdam.view.NotVisitedDialogFragment;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.app.DialogFragment;
 import android.content.BroadcastReceiver;
 import android.content.Context;

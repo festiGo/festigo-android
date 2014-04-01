@@ -3,7 +3,7 @@ package net.codeforeurope.amsterdam;
 import net.codeforeurope.amsterdam.model.Waypoint;
 import net.codeforeurope.amsterdam.util.ApiConstants;
 import net.codeforeurope.amsterdam.util.DataConstants;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;

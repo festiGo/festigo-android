@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import net.codeforeurope.amsterdam.model.City;
 import net.codeforeurope.amsterdam.model.LocateData;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

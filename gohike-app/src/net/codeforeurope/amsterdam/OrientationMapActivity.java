@@ -1,7 +1,7 @@
 package net.codeforeurope.amsterdam;
 
 import net.codeforeurope.amsterdam.model.Waypoint;
-import nl.dezwiger.auiw.R;
+import es.festigo.festigo.R;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.location.Location;
