@@ -11,8 +11,8 @@ public class ApiConstants {
 	public static final String SUCCESS = "success";
 	public static final String ERROR_MESSAGE = "error_message";
 	public static final String ERROR = "error";
-	public static final String BASE_URL = "http://gohike.herokuapp.com/api/%s";
-	public static final String WEB_BASE_URL = "http://www.gotakeahike.nl/%s";
+	public static final String BASE_URL = "http://festigo.herokuapp.com/api/%s";
+	public static final String WEB_BASE_URL = "http://cms.festigo.es/%s";
 
 	public static final String PRIVACY_DOCUMENT_URI = "privacy-policy.html";
 	public static final String TOS_DOCUMENT_URI = "terms-of-use.html";

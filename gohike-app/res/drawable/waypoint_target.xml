@@ -2,11 +2,11 @@
 <level-list
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <item
-        android:drawable="@drawable/waypoint_target_normal"
+        android:drawable="@drawable/waypoint_target_red"
         android:maxLevel="0"
         android:minLevel="0" />
      <item
-        android:drawable="@drawable/waypoint_target_checked"
+        android:drawable="@drawable/waypoint_target_checked_red"
         android:maxLevel="1"
         android:minLevel="1" />
 </level-list>

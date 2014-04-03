@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="es.festigo.festigo"
-    android:versionCode="4"
+    android:versionCode="5"
     android:versionName="1.0" >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -122,7 +122,7 @@
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyABcrrE2mEwRwufQd52GlOIBpiL4rk1CdE" />
+            android:value="AIzaSyDl2JGar_qtls9GbUea_e1RZfBkQ4VE8f0" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />

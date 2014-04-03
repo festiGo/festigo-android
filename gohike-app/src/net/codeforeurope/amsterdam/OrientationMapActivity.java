@@ -1,5 +1,8 @@
 package net.codeforeurope.amsterdam;
 
+import java.util.Iterator;
+
+import net.codeforeurope.amsterdam.model.Route;
 import net.codeforeurope.amsterdam.model.Waypoint;
 import es.festigo.festigo.R;
 import android.content.Intent;
@@ -75,12 +78,25 @@ public class OrientationMapActivity extends AbstractGameActivity implements OnMy
 	protected void onResume() {
 		super.onResume();
 		Waypoint currentTarget = getCurrentTarget();
+		Route currentRoute = getCurrentRoute();
+		
 		targetPosition = new LatLng(currentTarget.latitude, currentTarget.longitude);
 
 		map.addMarker(new MarkerOptions().position(targetPosition).draggable(false)
 				.title(currentTarget.name.getLocalizedValue())
-				.icon(BitmapDescriptorFactory.fromResource(R.drawable.blue_map_marker)));
+				.icon(BitmapDescriptorFactory.fromResource(R.drawable.red_map_marker)));
 
+		for(Iterator<Waypoint> i= currentRoute.waypoints.iterator(); i.hasNext(); ) {
+		    Waypoint wp = i.next();
+		    System.out.println(wp);
+		    if(wp.rank != currentTarget.rank){
+		    	//add a small map marker
+		    	LatLng wpPosition = new LatLng(wp.latitude, wp.longitude);
+				map.addMarker(new MarkerOptions().position(wpPosition).draggable(false)
+						.title(wp.name.getLocalizedValue())
+						.icon(BitmapDescriptorFactory.fromResource(R.drawable.red_map_marker_small)));
+		    }
+		}
 		// zoomIn();
 	}
 

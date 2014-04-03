@@ -18,7 +18,7 @@ import android.content.Intent;
 import android.net.http.AndroidHttpClient;
 
 public abstract class AbstractApiService extends IntentService {
-	protected static String API_URL = "http://gohike.herokuapp.com/api/%s";
+	protected static String API_URL = "http://festigo.herokuapp.com/api/%s";
 
 	public AbstractApiService(String name) {
 		super(name);

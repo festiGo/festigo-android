@@ -30,7 +30,7 @@ public class CatalogApiService extends AbstractApiService {
 
 	private static String NAME = "CatalogApiService";
 
-	public static String END_POINT = "%s/catalog/%d?profiles=9";
+	public static String END_POINT = "%s/catalog/%d";
 
 	public CatalogApiService() {
 		super(NAME);

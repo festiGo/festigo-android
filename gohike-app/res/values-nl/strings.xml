@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Stadexpeditie</string>
+    <string name="app_name">festiGo</string>
     <string name="profiles">Profiles</string>
     <string name="routes">Routes</string>
     <string name="start_hike">Start</string>
@@ -29,18 +29,18 @@
     <string name="target_distance_m">%.0fm</string>
     <string name="target_distance_km">%.1fkm</string>
     <string name="share_reward_using">Delen ornderscheiding&#8230;</string>
-    <string name="go_hike">Go Hike!</string>
+    <string name="go_hike">festiGo!</string>
     <string name="not_found_dialog_title">Nog niet gevonden!</string>
     <string name="not_found_dialog_message">Hike naar interessante plekken om meer over ze te ontdekken. Nu vertrekken?</string>
     <string name="not_found_dialog_yes">Ja!</string>
     <string name="not_found_dialog_no">Later</string>
     <string name="app_id">547542925309510</string>
-    <string name="earned_reward">Ik heb enkel een "%s" badge verdiend door te spelen Take a Hike!</string>
+    <string name="earned_reward">Ik heb enkel een "%s" badge verdiend door te spelen festiGo!</string>
     <string name="share_reward_success">Geslaagd!</string>
     <string name="share_reward_success_message">Bedankt voor het delen van uw badge met je vrienden</string>
     <string name="share_reward_error">Sorry, there was an error sharing your badge</string>
     <string name="first_launch_title">Welkom!</string>
-    <string name="first_launch_message">Bedankt voor het downloaded van de Stadexpeditie App. Omdat deze app gloednieuw is loodsen we je graag door de setup heen.\n
+    <string name="first_launch_message">Bedankt voor het downloaded van de festiGo App. Omdat deze app gloednieuw is loodsen we je graag door de setup heen.\n
 
           We gaan uitzoeken waar je op dit moment bent, zodat we relevante content in je buurt te kunnen aanraden. Op het volgende scherm kies je en stad.\n
 
@@ -56,7 +56,7 @@
     <string name="content_grid_loading_catalog">Catalogus laden</string>
     <string name="content_grid_downloading_images">Afbeeldingen laden</string>
     <string name="content_grid_update_available">Update beschikbaar</string>
-    <string name="route_detail_go_hike">Go Hike!</string>
+    <string name="route_detail_go_hike">festiGo!</string>
     <string name="route_detail_download">Download route</string>
     <string name="route_detail_update">Update route</string>
     <string name="route_detail_facebook">Koppel aan facebook</string>
@@ -64,7 +64,7 @@
     <string name="route_detail_updating_route">Route wordt geupdate</string>
     <string name="route_detail_downloading_images">Afbeeldingen downloaden</string>
     <string name="settings">Instellingen</string>
-    <string name="settings_facebook_text">Om je Stadexpeditie beleving compleet te maken raden we je aan om de App te koppelen aan je facebookprofiel. Zodra je een route hebt afgerond ontvang je een award die je dan kan delen op facebook.</string>
+    <string name="settings_facebook_text">Om je festiGo beleving compleet te maken raden we je aan om de App te koppelen aan je facebookprofiel. Zodra je een route hebt afgerond ontvang je een award die je dan kan delen op facebook.</string>
     <string name="settings_privacy_policy">Privacy beleid</string>
     <string name="settings_terms_of_service">Service instellingen</string>
 
